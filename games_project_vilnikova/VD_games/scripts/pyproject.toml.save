@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["prompt"]
+dependecies = []
 
 [build-system]
 requires = ["hatchling"]
@@ -13,11 +13,6 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["VD_games"]
 
-[dependency-groups]
-dev = [
-    "ruff>=0.14.4",
-]
-
-[project.scripts]
-VD_games = "VD_games.scripts.VD_main:main"
-VD_even = "VD_games.scripts.VD_even:main"
+[project.scrpits]
+VD-games = "VD_games.scripts.VD_main:main"
+VD-even = "VD_games.scripts.VD_even:main"
