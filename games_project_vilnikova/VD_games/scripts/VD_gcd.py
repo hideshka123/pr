@@ -1,12 +1,12 @@
 from VD_games.cli import welcome_user
 from VD_games.engine import run_game
-from VD_games.games.even import generate_question_answer
+from VD_games.games.gcd import generate_question_answer
 
 
 def main():
     name = welcome_user()
     success = run_game(
-        'Answer "yes" if the number is even, otherwise answer "no".',
+        "Find the greatest common divisor of given numbers.",
         generate_question_answer
     )
     if success:
